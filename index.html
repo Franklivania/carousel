@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Carousel Slider (I4G&Zuri)</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <img src="./assets/dragon.png" alt="" id="left">
+        <img src="./assets/dragon.png" alt="" id="right">
+
+        <h1>Move to places in Japan. <img src="./assets/flag.webp" alt=""></h1>
+        <p>Get the enhanced experience</p>
+
+        <div class="slider">
+            <button id="prev" class="prev" type="button" onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div class="slide image-item-1">
+                <img src="./assets/kyoto.jpg" class="image" alt="" data-index="1">
+                <div class="slide-text">
+                    <h1>Kyoto</h1>
+                    <p>The home of the Shinto</p>
+                </div>
+            </div>
+
+            <div class="slide image-item-2">
+                <img src="./assets/nagano.jpg" class="image" alt="" data-index="2">
+                <div class="slide-text">
+                    <h1>Nagano</h1>
+                    <p>The home of the Zenko-ji Temple</p>
+                </div>
+            </div>
+
+            <div class="slide image-item-3">
+                <img src="./assets/naha.jpg" class="image" alt="" data-index="3">
+                <div class="slide-text">
+                    <h1>Naha</h1>
+                    <p>The medival center of the ancient Okinawa prefecture</p>
+                </div>
+            </div>
+
+            <div class="slide image-item-4">
+                <img src="./assets/nara.jpg" class="image" alt="" data-index="4">
+                <div class="slide-text">
+                    <h1>Nara</h1>
+                    <p>Home of the seven great temples</p>
+                </div>
+            </div>
+
+            <div class="slide image-item-5">
+                <img src="./assets/osaka.jpg" class="image" alt="" data-index="5">
+                <div class="slide-text">
+                    <h1>Osaka</h1>
+                    <p>The place of unforgetable fun and friendship</p>
+                </div>
+            </div>
+
+            <div class="slide image-item-6">
+                <img src="./assets/tokyo.jpg" class="image" alt="" data-index="6">
+                <div class="slide-text">
+                    <h1>Tokyo</h1>
+                    <p>The land od the "Sakura" tree and Shibuya crossingx</p>
+                </div>
+            </div>
+
+            <button id="next" class="next" type="button" onclick="plusDivs(1)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
